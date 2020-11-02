@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: inventoryDB
+#3 dashed sperate the profile definitions
+---
+spring:
+  profiles: prod
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: inventoryDB
